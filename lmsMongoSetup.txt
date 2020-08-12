@@ -1,0 +1,9 @@
+db.system_role.insertMany([
+{_id:"R001",name:"Manager"},
+{_id:"R002",name:"Teacher"},
+{_id:"R003",name:"Student"},
+{_id:"R004",name:"Guest"},
+{_id:"R005",name:"Non-Editing Teacher"},
+{_id:"R006",name:"Course creator"},
+{_id:"R007",name:"Authenticated user"}
+])
