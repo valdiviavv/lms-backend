@@ -1,4 +1,4 @@
-db.system_role.insertMany([
+db.system_roles.insertMany([
 {_id:"R001",name:"Manager"},
 {_id:"R002",name:"Teacher"},
 {_id:"R003",name:"Student"},
@@ -7,3 +7,16 @@ db.system_role.insertMany([
 {_id:"R006",name:"Course creator"},
 {_id:"R007",name:"Authenticated user"}
 ])
+
+db.categories.insertMany([
+{_id:"CAT001",name:"Category1"},
+{_id:"CAT002",name:"Category2"},
+{_id:"CAT003",name:"Category3"}
+])
+
+db.courses.insertMany([
+  {_id:"CU001",name:"Course1"},
+  {_id:"CU002",name:"Course2"},
+  {_id:"CU003",name:"Course3"},
+  {_id:"CU004",name:"Course4"}
+  ])
