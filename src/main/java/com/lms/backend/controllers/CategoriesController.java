@@ -95,6 +95,8 @@ public class CategoriesController {
         categoriesRepository.deleteById(id);
     }
 
+
+
     @PutMapping(CATEGORIES_PATH + "/{id}")
     public ResponseEntity<Categories> updateCategory(@RequestBody Categories categories, @PathVariable("id") String id) {
         Optional<Categories> optionalResponse = categoriesRepository.findById(id);
