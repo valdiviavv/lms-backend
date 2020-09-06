@@ -98,7 +98,8 @@ public class CategoriesController {
 
 
     @PutMapping(CATEGORIES_PATH + "/{id}")
-    public ResponseEntity<Categories> updateCategory(@RequestBody Categories categories, @PathVariable("id") String id) {
+    public ResponseEntity<Categories> updateCategory(@RequestBody Categories categories,
+                                                     @PathVariable("id") String id) {
         Optional<Categories> optionalResponse = categoriesRepository.findById(id);
         if (optionalResponse.isEmpty()) {
             throw new CategoriesNotFoundException(id);
