@@ -10,5 +10,6 @@ public class LmsConstants {
     public static final String SYSTEM_ROLES_PATH = "/system-roles";
     public static final String CATEGORIES_PATH = "/categories";
     public static final String COURSES_PATH = "/courses";
+    public static final String USERS_PATH = "/users";
 
 }

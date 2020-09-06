@@ -20,3 +20,32 @@ db.courses.insertMany([
   {_id:"CU003",name:"Course3"},
   {_id:"CU004",name:"Course4"}
   ])
+
+
+db.users.insertMany([
+    {_id:"U001", firstName: "Chayanne", lastName: "Figueroa", email: "figueroac@mail.com", password: "figueroachayanne"},
+    {_id:"U002", firstName: "Miguel", lastName: "Bose", email: "bosem@mail.com", password: "bosemiguel"},
+    {_id:"U003", firstName: "Bon", lastName: "Jovi", email: "jovib@mail.com", password: "jovibon"},
+    {_id:"U004", firstName: "Enrique", lastName: "Iglesias", email: "iglesiase@mail.com", password: "iglesiasenrique"},
+])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

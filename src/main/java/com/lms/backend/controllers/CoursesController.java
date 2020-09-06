@@ -1,9 +1,6 @@
 package com.lms.backend.controllers;
 
-
-import com.lms.backend.exceptions.CategoriesNotFoundException;
 import com.lms.backend.exceptions.CoursesNotFoundException;
-import com.lms.backend.models.Categories;
 import com.lms.backend.models.Courses;
 import com.lms.backend.repositories.CoursesRepository;
 import org.springframework.http.HttpStatus;
