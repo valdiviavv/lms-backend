@@ -6,6 +6,7 @@ import com.lms.backend.models.Users;
 import com.lms.backend.repositories.UsersRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -71,6 +72,12 @@ public class UsersController {
         usersRepository.save(users);
         return new ResponseEntity<>(users, HttpStatus.OK);
 
+    }
+
+    @PostMapping(USERS_PATH)
+    public @ResponseBody ResponseEntity<Users>addUser(@Validated @RequestBody Users users) {
+        usersRepository.save(users);
+        return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
 
